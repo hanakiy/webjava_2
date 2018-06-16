@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>WorkingView</title>
+</head>
+<body>
+<form method="get" action="/WorkingView">
+  <caption>『仕事内容』</caption>
+    <p th:text="${se}"/>
+    <p th:text="${semorning}"/>
+  <p th:text="${shigoto}"/>
+  <p th:text="${okane}"/>
+<p>
+
+<input type="button" onclick="location.href='/EntrysheetViewA'"value="エントリーシートへ">
+
+<br>
+  <caption>『仕事内容』</caption>
+    <p th:text="${keiri}"/>
+    <p th:text="${keirimorning}"/>
+  <p th:text="${shigotokei}"/>
+  <p th:text="${okanekei}"/>
+<p>
+
+<input type="button" onclick="location.href='/EntrysheetViewB'"value="エントリーシートへ">
+
+</form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EntrySheet</title>
+</head>
+<body>
+<form method="get" action="/EntrysheetViewA">
+  <caption>エントリーシートA</caption>
+      <p th:text="${entryname}"/>
+  <p th:text="${man}"/>
+<input type="radio" name="q1" value="サンプル"> はい
+<input type="radio" name="q1" value="サンプル"> いいえ
+</p>
+<p>
+<input type="button" onclick="location.href='/EntryFinish'"value="エントリーシートへ">
+
+<input type="button" value="仕事一覧へ" onclick="history.back()">
+</p>
+<p>
+  <span class="choice" th:text="${choice}"></span>
+</p>
+</form>
+</body>
+</html>

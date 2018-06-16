@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EntrySheet</title>
+</head>
+<body>
+<form method="get" action="/EntrysheetViewB">
+  <caption>エントリーシートB</caption>
+    <p th:text="${entryname}"/>
+  <p th:text="${woman}"/>
+<input type="radio" name="q1" value="はい"> はい
+<input type="radio" name="q1" value="いいえ"> いいえ
+</p>
+<p>
+<input type="button" onclick="location.href='/EntryFinish'"value="エントリーシートへ">
+
+<input type="button" value="仕事一覧へ" onclick="history.back()">
+</p>
+</form>
+</body>
+</html>
