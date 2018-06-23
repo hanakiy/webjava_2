@@ -6,8 +6,10 @@
 </head>
 <body>
 <form method="get" action="/EntryFinish">
-  <caption>エントリーシート完了です！ありがとうございます！</caption>
+       <p th:text="${finish}"/>
 <input type="button" value="エントリーシートへ戻る" onclick="history.back()">
+<p>
+</p>
 </form>
 </body>
 </html>
